@@ -64,9 +64,13 @@ console.log(copyPerson);
 const keys = Object.keys(copyPerson);
 console.log(keys); // ['firstName', 'lastName', 'age', 'country', 'skills', 'getFullName']
 
-// object.entries: to get the keys and values in an array
+// object.values: to get values in an array
 const values = Object.values(copyPerson);
 console.log(values);
+
+// object.entries: to get the keys and values in an array
+const entries = Object.entries(copyPerson);
+console.log(entries);
 
 // hasOwnProperty: checks if a specific key or property exists in an object
 console.log(copyPerson.hasOwnProperty('firstName'));
