@@ -111,5 +111,31 @@ const products = [
 // create a function called signUp which allows user to add to the collection
 // if user exists, inform the user that he already has an account
 function signUp(){
-    
+    const userName = prompt("Enter username: ");
+    const currentUser = null;
+    for(const name in users){
+      currentUser = users[name];
+      // check if current user has an account
+      if(currentUser.username == userName){
+          console.log("You already have an account");
+          break;
+      }
+    }
+    if(currentUser.username != userName){
+      users.push({name: userName});
+    }
 }
+
+// create a function called signIn which allows user to sign in
+function signIn(){
+  const userName = prompt("enter username:");
+  const password = prompt("enter password:");
+  for(const user in users){
+    const currentUser = users[user];
+    if(currentUser.username == userName && currentUser.password == password){
+      return "You are signed in.";
+    }
+  }
+  return "incorrect login info.";
+}
+
