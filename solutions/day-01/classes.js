@@ -49,3 +49,19 @@ const person = new Person('Noran', 'Abdel-Aziz');
 console.log(person); 
 console.log(person.getFullName());
 console.log(Person.showDateTime());
+
+// inheritance
+class Student extends Person {
+    constructor(firstName, lastName, age, country, city, gender){
+        super(firstName, lastName);
+        this.age = age;
+        this.country = country;
+        this.city = city;
+        this.gender = gender;
+    }
+    saySomething(){
+        console.log("I am a child of the Person class");
+    }
+}
+const student = new Student('Ahmed', 'Abdel-Aziz');
+console.log(student);
