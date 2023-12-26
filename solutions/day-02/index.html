@@ -33,7 +33,7 @@
             // jsx element
             // const jsxElement = <h1>I am a JSX element</h1>
 
-            // another jsx element
+            // header jsx element
             const header = (
                 <header>
                     <h1>welcome to 30 days of react</h1>
@@ -44,9 +44,40 @@
                 </header>
             )
 
+            // main jsx element
+            const main = (
+                <main>
+                    <p>prereq to get started react.js:</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </main>
+            )
+
+            // footer jsx element
+            const footer = (
+                <footer>
+                    <p>Copyright 2023</p>
+                </footer>
+            )
+
+            // 4.
+            // jsx element which contains all, it is a container or parent
+            const app = (
+                <div>
+                    {header}
+                    {main}
+                    {footer}
+                </div>
+            )
+
             // we render the jsx element using the reactDOM package
             // reactDOM has the render method which takes 2 args
-            ReactDOM.render(header, rootElement);
+            ReactDOM.render(app, rootElement);
+            // OR
+            // React.DOM.render([header, main, footer], rootElement)
         </script>
     </body>
 </html>
@@ -81,4 +112,11 @@
     the reactDOM package has a method render
     the render method takes 2 args: a jsx element/component
     and the root document
+
+    4. now we have 3 jsx elements: header, main, footer
+    the best way to render all 3 of these is by wrapping them all
+    in a parent jsx element or putting them in an array
+    to include jsx element inside another jsx element, 
+    we use a curly bracket, {}, and call the name of 
+    the jsx inside the curly bracket
 -->
