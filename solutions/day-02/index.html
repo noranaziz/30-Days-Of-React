@@ -124,6 +124,8 @@
                 lineHeight: 1.5
             }
             */
+
+            /*
             const header = (
                 <header>
                     <div className = "header-wrapper">
@@ -135,6 +137,45 @@
                     </div>
                 </header>
             )
+            */
+            // 7.
+            const welcome = "welcome to 30 days of react"
+            const title = "day 2"
+            const subtitle = "js library"
+            const author = {
+                firstName: "Noran",
+                lastName: "Abdel-Aziz"
+            }
+            const date = "December 26, 2023"
+            const header = (
+                <header>
+                    <div className = "header-wrapper">
+                        <h1>{welcome}</h1>
+                        <h2>{title}</h2>
+                        <h3>{subtitle}</h3>
+                        <p>{author.firstName} {author.lastName}</p>
+                        <small>Date: {date}</small>
+                    </div>
+                </header>
+            )
+
+            // 7.
+            const numOne = 3
+            const numTwo = 2
+            const result = (
+                <p>{numOne} + {numTwo} = {numOne + numTwo}</p>
+            )
+
+            // 7.
+            const yearBorn = 2003
+            const currentYear = new Date().getFullYear()
+            const age = currentYear - yearBorn
+            const personAge = (
+                <p>
+                    {" "}
+                    {author.firstName} {author.lastName} is {age} years old
+                </p>
+            )
 
             // main jsx element
             // 5.
@@ -143,6 +184,7 @@
                 backgroundColor: "#F3F0F5"
             }
             */
+            /*
             const main = (
                 <main>
                     <div className = "main-wrapper">
@@ -160,6 +202,25 @@
                     </div>
                 </main>
             )
+            */
+            // 7.
+            const techs = ["HTML", "CSS", "JavaScript"]
+            const techsFormatted = techs.map((tech) => <li key = {tech}>{tech}</li>)
+            const main = (
+                <main>
+                    <div className = "main-wrapper">
+                        <p>prereq to get started {' '}
+                            <strong>
+                                <em>react.js</em>
+                            </strong>
+                             :    
+                        </p>
+                        <ul>{techsFormatted}</ul>
+                        {result}
+                        {personAge}
+                    </div>
+                </main>
+            ) 
 
             // footer jsx element
             // 5.
@@ -168,10 +229,21 @@
                 backgroundColor: "#61DBFB"
             }
             */
+           /*
             const footer = (
                 <footer>
                     <div className = "footer-wrapper">
                         <p>Copyright 2023</p>
+                    </div>
+                </footer>
+            )
+            */
+            // 7.
+            const copyRight = "CopyRight 2023"
+            const footer = (
+                <footer>
+                    <div className = "footer-wrapper">
+                        <p>{copyRight}</p>
                     </div>
                 </footer>
             )
@@ -251,4 +323,12 @@
     6. instead of using style object, using the regular 
     styling method is easier
 
+    7. injecting data to a jsx element
+    so far, we used static data on the jsx elements,
+    but we can also pass different data types as 
+    dynamic data
+    the dynamic data could be a string, number, boolean,
+    array, or object
+    * to remove warning from techsFormatted, 
+      pass each item with a unique key 
 -->
