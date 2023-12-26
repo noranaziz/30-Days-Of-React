@@ -34,8 +34,10 @@
             // const jsxElement = <h1>I am a JSX element</h1>
 
             // header jsx element
+            // 5.
+            const style = { border: '2px solid orange', color: 'black', fontSize: '18px'}
             const header = (
-                <header>
+                <header style = {style}>
                     <h1>welcome to 30 days of react</h1>
                     <h2>day 2</h2>
                     <h3>js library</h3>
@@ -119,4 +121,16 @@
     to include jsx element inside another jsx element, 
     we use a curly bracket, {}, and call the name of 
     the jsx inside the curly bracket
+
+    5. let us add style to our jsx elements
+    to add style to a jsx element, we use inline style
+    or className
+    we inject the style object using {}
+    every css property becomes a key and every css property
+    value becomes a value for the object
+    for instance, border is a key and '2px solid orange' is a value,
+    color is a key and 'black' is a value, fontSize is a key
+    and '18px' is a value
+    all two word css properties will change to camelCase when 
+    we use them as a key in the css object in react or js 
 -->
