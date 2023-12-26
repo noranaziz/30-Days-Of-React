@@ -9,7 +9,87 @@
     <head>
         <meta charset = "UTF-8"/>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+        <!-- 6. -->
+        <link
+            href = "https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Roboto:300,400,500&display=swap"
+            rel = "stylesheet"
+        />
         <title>day 2 of react</title>
+        <!-- 6. -->
+        <style>
+            /* == general style == */
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            html, body {
+                height: 100%;
+                line-height: 1.5;
+                font-family: "Montserrat";
+                font-weight: 300;
+                color: black;
+            }
+
+            .root {
+                min-height: 100%;
+                position: relative;
+            }
+
+            .header-wrapper, .main-wrapper, .footer-wrapper {
+                width: 85%;
+                margin: auto;
+            }
+
+            .header-wrapper, .main-wrapper {
+                padding: 10px;
+                margin: 2px auto;
+            }
+
+            h1 {
+                font-size: 70px;
+                font-weight: 300;
+            }
+
+            h2, h3 {
+                font-weight: 300;
+            }
+
+            header {
+                background-color: #61dbfb;
+                padding: 10px;
+            }
+
+            main {
+                padding: 10px;
+                padding-bottom: 60px;
+                /* height of footer */
+            }
+
+            ul {
+                margin-left: 15px;
+            }
+
+            ul li {
+                list-style: none;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 60px;
+                /* height of footer */
+                background: #6cf;
+            }
+
+            .footer-wrapper {
+                font-weight: 400;
+                text-align: center;
+                line-height: 60px;
+            }
+        </style>
     </head>
     <body>
         <div class = "root"></div>
@@ -36,14 +116,16 @@
             // header jsx element
             // 5.
             // const style = { border: '2px solid orange', color: 'black', fontSize: '18px'}
+            /*
             const headerStyles = {
                 backgroundColor: "#61DBFB",
                 fontFamily: "Helvetica Neue",
                 padding: 25,
                 lineHeight: 1.5
             }
+            */
             const header = (
-                <header style = {headerStyles}>
+                <header>
                     <div className = "header-wrapper">
                         <h1>welcome to 30 days of react</h1>
                         <h2>day 2</h2>
@@ -55,27 +137,42 @@
             )
 
             // main jsx element
+            // 5.
+            /* 
             const mainStyles = {
                 backgroundColor: "#F3F0F5"
             }
+            */
             const main = (
-                <main style = {mainStyles}>
-                    <p>prereq to get started react.js:</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
+                <main>
+                    <div className = "main-wrapper">
+                        <p>prereq to get started {' '}
+                            <strong>
+                                <em>react.js</em>
+                            </strong>
+                            :    
+                        </p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
                 </main>
             )
 
             // footer jsx element
+            // 5.
+            /*
             const footerStyles = {
                 backgroundColor: "#61DBFB"
             }
+            */
             const footer = (
-                <footer style = {footerStyles}>
-                    <p>Copyright 2023</p>
+                <footer>
+                    <div className = "footer-wrapper">
+                        <p>Copyright 2023</p>
+                    </div>
                 </footer>
             )
 
@@ -150,4 +247,8 @@
     in jsx element we write className instead of class
     because class is a reserved word in js
     similar to className, htmlFor instead of for in label tag
+
+    6. instead of using style object, using the regular 
+    styling method is easier
+
 -->
