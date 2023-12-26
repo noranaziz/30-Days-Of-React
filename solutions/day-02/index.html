@@ -1,7 +1,7 @@
 <!-- 
     we can get started with react in 2 ways:
-    - using CDN
-    - create-react-app
+    - using CDN (using this for now)
+    - create-react-app (will use this for rest)
 -->
 
 <!DOCTYPE html>
@@ -14,6 +14,7 @@
     <body>
         <div class = "root"></div>
 
+        <!-- 2. -->
         <script 
             crossorigin src = "https://unpkg.com/react@16/umd/react.development.js">
         </script>
@@ -25,12 +26,32 @@
         </script>
         <script src = "https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script type = "text/babel">
-            console.log(React);
+            // 3.
+            // to get the root element from the HTML document
+            const rootElement = document.querySelector(".root");
+
+            // jsx element
+            // const jsxElement = <h1>I am a JSX element</h1>
+
+            // another jsx element
+            const header = (
+                <header>
+                    <h1>welcome to 30 days of react</h1>
+                    <h2>day 2</h2>
+                    <h3>js library</h3>
+                    <p>Noran Abdel-Aziz</p>
+                    <small>December 26, 2023</small>
+                </header>
+            )
+
+            // we render the jsx element using the reactDOM package
+            // reactDOM has the render method which takes 2 args
+            ReactDOM.render(header, rootElement);
         </script>
     </body>
 </html>
 <!-- 
-    as you can see from the above index.html, we have only
+    1. as you can see from the above index.html, we have only
     one div with a class root and script
     the root div is the gateway to connect all react components
     to the index.html
@@ -38,7 +59,7 @@
     will be babel
     babel will transpile the react jsx to pure js on browser
 
-    the babel library is linked to our document and now
+    2. the babel library is linked to our document and now
     we can make use of it
     next step: importing react and reactDOM using CDN or link
     in order to link them, we attach both packages from CDN
@@ -48,4 +69,16 @@
     if you see an object containing react methods then
     you managed to link your project with react CDN and 
     are ready to use react
+
+    3. now the index.html has everything we need to write 
+    react code
+    let us get the root element using document.querySelect('.root')
+    and assign it to a variable name rootElement
+    this is the only place we directly interact with DOM
+    let us render the jsx element on the browser
+    in order to do so, we need the react and reactDOM library
+    we also need babel to transpile the jsx to js code
+    the reactDOM package has a method render
+    the render method takes 2 args: a jsx element/component
+    and the root document
 -->
