@@ -35,20 +35,31 @@
 
             // header jsx element
             // 5.
-            const style = { border: '2px solid orange', color: 'black', fontSize: '18px'}
+            // const style = { border: '2px solid orange', color: 'black', fontSize: '18px'}
+            const headerStyles = {
+                backgroundColor: "#61DBFB",
+                fontFamily: "Helvetica Neue",
+                padding: 25,
+                lineHeight: 1.5
+            }
             const header = (
-                <header style = {style}>
-                    <h1>welcome to 30 days of react</h1>
-                    <h2>day 2</h2>
-                    <h3>js library</h3>
-                    <p>Noran Abdel-Aziz</p>
-                    <small>December 26, 2023</small>
+                <header style = {headerStyles}>
+                    <div className = "header-wrapper">
+                        <h1>welcome to 30 days of react</h1>
+                        <h2>day 2</h2>
+                        <h3>js library</h3>
+                        <p>Noran Abdel-Aziz</p>
+                        <small>December 26, 2023</small>
+                    </div>
                 </header>
             )
 
             // main jsx element
+            const mainStyles = {
+                backgroundColor: "#F3F0F5"
+            }
             const main = (
-                <main>
+                <main style = {mainStyles}>
                     <p>prereq to get started react.js:</p>
                     <ul>
                         <li>HTML</li>
@@ -59,8 +70,11 @@
             )
 
             // footer jsx element
+            const footerStyles = {
+                backgroundColor: "#61DBFB"
+            }
             const footer = (
-                <footer>
+                <footer style = {footerStyles}>
                     <p>Copyright 2023</p>
                 </footer>
             )
@@ -68,7 +82,7 @@
             // 4.
             // jsx element which contains all, it is a container or parent
             const app = (
-                <div>
+                <div className = "app">
                     {header}
                     {main}
                     {footer}
@@ -133,4 +147,7 @@
     and '18px' is a value
     all two word css properties will change to camelCase when 
     we use them as a key in the css object in react or js 
+    in jsx element we write className instead of class
+    because class is a reserved word in js
+    similar to className, htmlFor instead of for in label tag
 -->
