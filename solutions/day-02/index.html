@@ -8,12 +8,25 @@
 <html lang = "en">
     <head>
         <meta charset = "UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
         <title>day 2 of react</title>
     </head>
     <body>
         <div class = "root"></div>
-        <script></script>
+
+        <script 
+            crossorigin src = "https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+        <script
+            crossorigin src = "https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+        <script 
+            crossorigin src = "https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+        </script>
+        <script src = "https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type = "text/babel">
+            console.log(React);
+        </script>
     </body>
 </html>
 <!-- 
@@ -24,4 +37,15 @@
     in the script tag, we will write js, but the script type
     will be babel
     babel will transpile the react jsx to pure js on browser
+
+    the babel library is linked to our document and now
+    we can make use of it
+    next step: importing react and reactDOM using CDN or link
+    in order to link them, we attach both packages from CDN
+    to the body of index.html
+    to test if react is linked to index.html, do console.log(React)
+    open the browser console and you should get an object
+    if you see an object containing react methods then
+    you managed to link your project with react CDN and 
+    are ready to use react
 -->
