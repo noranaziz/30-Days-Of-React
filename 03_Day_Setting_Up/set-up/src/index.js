@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // header
+/* inline style
 const headerStyles = {
   backgroundColor: '#61DBFB',
   fontFamily: 'Helvetica Neue',
   padding: 25,
   lineHeight: 1.5
 }
+*/
 
 const header = (
-  <header style = {headerStyles}>
+  <header>
     <div className = 'header-wrapper'>
       <h1>welcome to 30 days of react</h1>
       <h2>setting up react</h2>
@@ -22,29 +24,42 @@ const header = (
 )
 
 // main
+/* inline style
 const mainStyles = {
   backgroundColor: '#F3F0F5'
 }
+*/
 
 const main = (
-  <main style = {mainStyles}>
-    <p>prereq to get started react.js:</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
+  <main>
+    <div className='main-wrapper'>
+      <p>prereq to get started {' '}
+        <strong>
+          <em>react.js</em>
+        </strong>
+        :
+      </p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </div>
   </main>
 )
 
 // footer
+/* inline style
 const footerStyles = {
   backgroundColor: '#61DBFB'
 }
+*/
 
 const footer = (
-  <footer style={footerStyles}>
-    <p>Copyright 2023</p>
+  <footer>
+    <div className='footer-wrapper'>
+      <p>Copyright 2023</p>
+    </div>
   </footer>
 )
 
