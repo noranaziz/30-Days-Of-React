@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // header
-
 const headerStyles = {
   backgroundColor: '#61DBFB',
   fontFamily: 'Helvetica Neue',
@@ -39,8 +38,12 @@ const main = (
 )
 
 // footer
+const footerStyles = {
+  backgroundColor: '#61DBFB'
+}
+
 const footer = (
-  <footer>
+  <footer style={footerStyles}>
     <p>Copyright 2023</p>
   </footer>
 )
