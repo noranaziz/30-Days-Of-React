@@ -2,19 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // header
+
+const headerStyles = {
+  backgroundColor: '#61DBFB',
+  fontFamily: 'Helvetica Neue',
+  padding: 25,
+  lineHeight: 1.5
+}
+
 const header = (
-  <header>
-    <h1>welcome to 30 days of react</h1>
-    <h2>setting up react</h2>
-    <h3>js library</h3>
-    <p>Noran Abdel-Aziz</p>
-    <small>December 27th, 2023</small>
+  <header style = {headerStyles}>
+    <div className = 'header-wrapper'>
+      <h1>welcome to 30 days of react</h1>
+      <h2>setting up react</h2>
+      <h3>js library</h3>
+      <p>Noran Abdel-Aziz</p>
+      <small>December 27th, 2023</small>
+    </div>
   </header>
 )
 
 // main
+const mainStyles = {
+  backgroundColor: '#F3F0F5'
+}
+
 const main = (
-  <main>
+  <main style = {mainStyles}>
     <p>prereq to get started react.js:</p>
     <ul>
       <li>HTML</li>
