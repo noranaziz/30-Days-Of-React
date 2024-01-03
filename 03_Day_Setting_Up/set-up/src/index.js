@@ -50,7 +50,7 @@ const footer = (
 
 // header, main, and footer
 const app = (
-  <div>
+  <div className='app'>
     {header}
     {main}
     {footer}
