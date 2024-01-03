@@ -1,5 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+/* importing media objects in react
+  create images folder in the src folder and save an image
+  inside
+  after importing, we will inject it to a jsx expression
+*/
+import thatamindavis from './images/amin davis.jpg'
+
+const aminDavis = (
+  <div>
+    <img src={thatamindavis} alt='amin davis'/>
+  </div>
+)
+
 
 // header
 /* inline style
@@ -70,6 +83,7 @@ const main = (
       <ul>{techsFormatted}</ul>
       {result}
       {personAge}
+      {aminDavis}
     </div>
   </main>
 )
