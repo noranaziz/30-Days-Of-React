@@ -1,9 +1,33 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
+}
+
+.inputs-wrapper {
+  width: 100%;
+  padding: 10px;
+}
+
+#input1, #input2, #input3 {
+  border: azure;
+  border-radius: 10px;
+}
+
+.app {
+  background-color: #8debf7;
+  border-radius: 10px;
 }
 
 #root {
