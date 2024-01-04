@@ -13,15 +13,15 @@ const subtitle = (
   </div>
 )
 
-const firstNameInput = <input id='input1' type='text' placeholder='first name'></input>
-const lastNameInput = <input id='input2' type='text' placeholder='last name'></input>
-const emailInput = <input id='input3' type='text' placeholder='email'></input>
+const firstNameInput = <input id='input1' type='text' placeholder='first name'/>
+const lastNameInput = <input id='input2' type='text' placeholder='last name'/>
+const emailInput = <input id='input3' type='text' placeholder='email'/>
 const inputs = (
   <div className='inputs-wrapper'>
     {firstNameInput} {lastNameInput} {emailInput}
   </div>
 )
-const subscribeBtn = <button></button>
+const subscribeBtn = <button>subscribe</button>
 
 const app = (
   <div className='app'>
