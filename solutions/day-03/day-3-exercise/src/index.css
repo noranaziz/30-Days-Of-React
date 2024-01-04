@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 5px;
   margin: 0;
-  width: 100%;
 }
 
 html, body {
@@ -13,6 +12,13 @@ html, body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+}
+
+.page-container {
+  background-color: #8debf7;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .inputs-wrapper {
@@ -42,8 +48,9 @@ button {
 }
 
 .app {
-  background-color: #8debf7;
   border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #root {
