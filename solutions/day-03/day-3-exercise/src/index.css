@@ -17,16 +17,18 @@ html, body {
 
 .inputs-wrapper {
   padding: 10px;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #input1, #input2, #input3 {
-  width: 32%;
   border: none;
   border-radius: 10px;
+  width: calc(33.33% - 10px);
+  margin-right: 10px;
+  margin: 0 auto;
 }
 
 button {
