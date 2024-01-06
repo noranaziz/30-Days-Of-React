@@ -21,6 +21,10 @@ html, body {
   margin: 0 auto;
 }
 
+.color-1, .color-2, .color-3, .color-4, .color-5 {
+  padding: 3px;
+}
+
 #root {
   text-align: center;
 }
