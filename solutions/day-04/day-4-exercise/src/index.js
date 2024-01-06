@@ -14,7 +14,17 @@ const hexaColor = () => {
 }
 
 // convert to react component
-const HexaColor = () => <div>{hexaColor()}</div>
+const HexaColor = () => {
+  const color = hexaColor()
+
+  const colorStyle = {
+    backgroundColor: color,
+    color: 'white',
+    padding: '10px',
+  }
+
+  return <div style={colorStyle}>{color}</div>
+}
 
 const App = () => (
   <div className='app'>
