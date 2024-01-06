@@ -16,5 +16,15 @@ const hexaColor = () => {
 // convert to react component
 const HexaColor = () => <div>{hexaColor()}</div>
 
+const App = () => (
+  <div className='app'>
+    <HexaColor/>
+    <HexaColor/>
+    <HexaColor/>
+    <HexaColor/>
+    <HexaColor/>
+  </div>
+)
+
 const rootElement = document.getElementById('root')
-ReactDOM.render(<HexaColor/>, rootElement)
+ReactDOM.render(<App/>, rootElement)
