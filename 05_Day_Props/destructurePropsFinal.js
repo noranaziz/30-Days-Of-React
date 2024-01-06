@@ -143,6 +143,17 @@ const App = () => {
         alert(showDate(new Date()))
     }
     const sayHi = () => {
-        
+        alert('hiiiiiiiii')
     }
+
+    return (
+        <div className='app'>
+            <Header data = {data}/>
+            <Main user={user} techs={techs} handleTime={handleTime} sayHi={sayHi}/>
+            <Footer copyright={date}/>
+        </div>
+    )
 }
+
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App/>, rootElement)
