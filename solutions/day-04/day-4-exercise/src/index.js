@@ -18,11 +18,21 @@ const HexaColor = () => <div>{hexaColor()}</div>
 
 const App = () => (
   <div className='app'>
-    <HexaColor/>
-    <HexaColor/>
-    <HexaColor/>
-    <HexaColor/>
-    <HexaColor/>
+    <div>
+      <HexaColor/>
+    </div>
+    <div>
+      <HexaColor/>
+    </div>
+    <div>
+      <HexaColor/>
+    </div>
+    <div>
+      <HexaColor/>
+    </div>
+    <div>
+      <HexaColor/>
+    </div>
   </div>
 )
 
