@@ -20,6 +20,7 @@ const HexaColor = () => {
   const colorStyle = {
     backgroundColor: color,
     color: 'white',
+    height: '50px',
     padding: '10px',
   }
 
